@@ -1,0 +1,51 @@
+
+/*Estilizandoa base do jogo*/
+body {
+    background: #fafafa;
+}
+
+.dino {
+ position: absolute;
+ bottom: 0;
+ background-image: url(dino.png);
+ width: 60px;
+ height: 60px;
+}
+
+.cactus {
+ position: absolute;
+ width: 60px;
+ height: 60px;
+ bottom: 0;
+ background-image: url(cactus.png);
+}
+
+.game-over {
+ text-align: center;
+ color: #666;
+ margin-top: 50px 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Criando animação*/
+
+@keyframes slideright {
+  from {
+      background: 70000%;
+  }  
+  to {
+      background: 0%;
+  }
+}
+
+.background {
+    position: absolute;
+    bottom:0;
+    background: url('background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+
